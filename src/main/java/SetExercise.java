@@ -20,8 +20,10 @@ public class SetExercise {
      * Some common implementations of Set are HashSet and TreeSet. Look into how to instantiate them.
      * @return a new Set<Integer> object.
      */
-    public Set<Integer> createSet(){
-        return null;
+    public Set<Integer> createSet()
+    {
+        HashSet <Integer> numb = new HashSet<>();
+        return numb;
     }
 
     /**
@@ -30,7 +32,7 @@ public class SetExercise {
      * @return the size of set. (number of values)
      */
     public int getSize(Set<Integer> set){
-        return 0;
+        return set.size();
     }
 
     /**
@@ -39,8 +41,9 @@ public class SetExercise {
      * @param item The item which we will be adding to set.
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
-    public void addUniqueItem(Set<Integer> set, int item){
-
+    public void addUniqueItem(Set<Integer> set, int item)
+    {
+        set.add(item);
     }
 
     /**
@@ -50,6 +53,6 @@ public class SetExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeItem(Set<Integer> set, int item){
-
+        set.remove(item);
     }
 }
